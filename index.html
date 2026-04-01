@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 </head>
 <body>
-  <main hidden>
+  <main>
 <div class="content ">
       <div class="text-section">
       <h1>Stay updated!</h1>
@@ -19,6 +19,7 @@
         <li><img src="./assets/images/icon-list.svg" alt="icon"> And much more!</li>
       </ul>
       <form action="#" class="form">
+        <span class="error-message hidden">Valid email required</span>
         <input type="email" class="email" placeholder="email@example.com">
         <button type="submit">Subscribe to monthly newsletter</button>
       </form>
@@ -35,12 +36,12 @@
   </main>
 
    <!-- success message -->
- <div class="success-message ">
+ <div class="success-message hidden">
   <img src="./assets/images/icon-success.svg" alt="Success icon">
    <h2>Thanks for subscribing!</h2>
    <p>A confirmation email has been sent to <strong class="email">email@example.com</strong>. Please open it and click the button within to confirm your subscription.</p>
 
-    <button type="button">Dismiss message</button>
+    <button type="button" id="dismissBtn">Dismiss message</button>
  </div>
 
   

@@ -31,7 +31,85 @@ main{
 .content{
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  gap: 2.5rem;
+}
+
+.text-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 6rem;
+    padding: 0rem 2rem;
+
+    h1{
+        color: var(--blue-800);
+        font-size: 3.5rem;
+    }
+
+    p{
+        color: var(--blue-700);
+        font-size: 1rem;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        li{
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+
+            img{
+                width: 1.25rem;
+            }
+        }
+        }
+
+        form{
+            margin-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+
+            input{
+                flex: 1;
+                padding: 1rem;
+                border-radius: 5px;
+                border: 1px solid var(--grey);
+                font-size: .9rem;
+            }
+
+            input:active, input:focus{
+                outline: none;
+                border-color: var(--blue-700);
+            }
+
+            button{
+                border: none;
+                border-radius: 5px;
+                padding: 1rem 2rem;
+                color: var(--white);
+                background-color: var(--blue-800);
+            }
+
+            button:hover{
+                background-color: var(--primary-red);
+                box-shadow: 0 2px 10px var(--primary-red);
+            }
+
+            .error-message{
+                color: var(--primary-red);
+                font-size: .85rem;
+                text-align: center;
+                margin-left: 18rem;
+            }
+
+        }
+
 }
 
 /* success message */
