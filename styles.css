@@ -13,6 +13,11 @@
     padding: 0;
 }
 
+img{
+    display: block;
+    width: 100%;
+}
+
 body{
   display: flex;
   align-items: center;
@@ -175,4 +180,25 @@ main{
 
 .hidden{
   display: none;
+}
+
+
+@media (max-width: 700px){
+    main{
+        width: 90%;
+    }
+
+    .content{
+        flex-direction: column-reverse;
+    }
+
+    .text-section{
+        padding: 0rem 1rem;
+        text-align: center;
+        margin-top: 0rem;
+
+        form .error-message{
+            margin-left: 0;
+        }
+    }
 }
