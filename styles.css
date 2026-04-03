@@ -1,5 +1,6 @@
 :root{
     --primary-red: hsl(4, 100%, 67%);
+    --secondary-red: hsla(4, 87%, 74%, 0.539);
     --blue-800:  hsl(234, 29%, 20%);
     --blue-700:hsl(235, 18%, 26%);
     --grey:hsl(0, 0%,58%);
@@ -79,6 +80,7 @@ main{
             display: flex;
             flex-direction: column;
             gap: .5rem;
+            position: relative;
 
             input{
                 flex: 1;
@@ -107,10 +109,13 @@ main{
             }
 
             .error-message{
+                position: absolute;
                 color: var(--primary-red);
-                font-size: .85rem;
-                text-align: center;
-                margin-left: 18rem;
+                font-size: .90rem;
+                /* text-align: center;
+                margin-left: 18rem; */
+                bottom: 7rem;
+                left: 19rem;
             }
 
         }
@@ -193,12 +198,67 @@ main{
     }
 
     .text-section{
+
+          h1{
+       
+            font-size: 2.5rem;
+        }
+
+    ul{
+
+        li{
+           
+            font-size: .8rem;
+        }
+    }
+
+    form{
+          .error-message{
+                position: absolute;
+                color: var(--primary-red);
+                font-size: .90rem;
+                /* text-align: center;
+                margin-left: 18rem; */
+                bottom: 7rem;
+                left: 10rem;
+            }
+    }
+
+
+}
+
+.success-message{
+    margin: 2rem;
+    height: 100vh;
+    padding-bottom: 10rem;
+    border-radius: 0rem;
+
+
+    img{
+        width: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    p{
+   
+        font-size: 1rem; 
+
+    }
+
+}
+}
+
+@media(max-width:950px){
+   .content{
+        flex-direction: column-reverse;
+    }
+
+    .text-section{
         padding: 0rem 1rem;
         text-align: center;
         margin-top: 0rem;
 
         form .error-message{
-            margin-left: 0;
-        }
-    }
+            margin-left: 0; 
 }
+}}

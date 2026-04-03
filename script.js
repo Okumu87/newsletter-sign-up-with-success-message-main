@@ -9,8 +9,10 @@ const errorMessage = document.querySelector('.error-message');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const emailValue = emailInput.value;
-    if(emailValue === '' || !emailValue) {
+    if(!emailValue || !emailValue.includes('@') || !emailValue.includes('com') && !emailValue.includes('nl') && !emailValue.includes('org') && !emailValue.includes('net')){
         errorMessage.classList.remove('hidden');
+        emailInput.style.backgroundColor = 'var(--secondary-red)';
+        emailInput.style.borderColor = 'var(--primary-red)';
         return;
     }
     successMessage.querySelector('.email').textContent = emailValue;

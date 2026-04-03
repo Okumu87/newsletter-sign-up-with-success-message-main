@@ -27,6 +27,7 @@
  <div class="img-section">
   <picture>
         <source media="(max-width: 600px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+         <source media="(max-width: 950px)" srcset="./assets/images/illustration-sign-up-tablet.svg">
         <img src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration">
   </picture>
       
@@ -37,9 +38,12 @@
 
    <!-- success message -->
  <div class="success-message hidden">
-  <img src="./assets/images/icon-success.svg" alt="Success icon">
+  <div >
+    <img src="./assets/images/icon-success.svg" alt="Success icon">
    <h2>Thanks for subscribing!</h2>
    <p>A confirmation email has been sent to <strong class="email">email@example.com</strong>. Please open it and click the button within to confirm your subscription.</p>
+  </div>
+  
 
     <button type="button" id="dismissBtn">Dismiss message</button>
  </div>
